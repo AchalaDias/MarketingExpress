@@ -1,0 +1,26 @@
+page-home {
+    .home{
+        background-image: url('/assets/images/main_back.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+   
+   
+    }
+
+    .card{
+         border-radius: 10px;
+         background: rgb(255,248,220); 
+         background: rgba(255,248,220,0.75);
+         color: #800000;
+    }
+    .card-header{
+        color: #FF4500;
+    }
+    .button{
+        margin-left: 12px;
+    }
+    
+
+
+}
