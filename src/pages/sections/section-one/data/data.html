@@ -1,0 +1,55 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Section - 1</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="home" padding>
+
+
+
+ <ion-card>
+    <ion-card-header>
+      Create your Quick Pitch
+    </ion-card-header>
+    <ion-card-content>
+Sometimes referred to as an Elevator Pitch, your Quick Pitch will help create a succinct and clear message that you will use to describe What you do and a clear message you can use throughout your marketing. When creating your Quick Pitch, you need to know four things:
+ <br/><br/>
+1. What your Company does
+2. Your Target Markets
+3. The Problems your Target Markets face & the Solutions you are going to provide them
+4. Why are You doing what you do?
+ <br/><br/>
+Complete these questions below to help you develop your Quick Pitch:
+ <br/><br/>
+? Help [Tip: Complete all Sections of this chapter in order.  Go through all the exercises before you finalize any of your answers. There are no right or wrong answers here.  Just write down what comes to you.]
+
+    
+    
+
+ <ion-card>
+    <ion-card-header>
+      1. What does your Company Do?
+    </ion-card-header>
+    <ion-card-content>
+ Describe your Company.<br/>
+[Give a short, clear description of your product, service or idea. Try to image that you are introducing your business for the first time to a new client. Try to do it in about three sentences.]
+ 
+<br/><br/>
+<ion-textarea class="user_input" placeholder="Your Answer"></ion-textarea>
+
+    </ion-card-content>
+  </ion-card>
+    
+    <button ion-button [disabled]="!buttonEnable" (click)="tip()">  <ion-icon name="help-circle"></ion-icon>  <span style="display:inline-block; width: 10px;"> </span>Help</button>
+    </ion-card-content>
+  </ion-card>
+
+
+   <button ion-button class="next_button" (click)="nextPage()">Next</button>
+
+</ion-content>

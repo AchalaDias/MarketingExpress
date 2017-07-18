@@ -1,0 +1,36 @@
+page-data {
+
+     .home{
+        background-image: url('/assets/images/section1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+   
+    }
+
+     .card{
+         border-radius: 10px;
+         background: rgb(10,10,10); 
+         background: rgba(10,10,10,0.75);
+         color:white;
+    }
+     .card-header{
+        color: white;
+    }
+
+    textarea {
+    width: 140px;
+    height: 140px;
+    resize: none; 
+    }
+    .user_input{
+        border: 1px solid white;
+        border-radius: 10px;
+        
+    }
+     .next_button{
+        // margin-left: -10px;
+        float: right;
+    }
+
+}

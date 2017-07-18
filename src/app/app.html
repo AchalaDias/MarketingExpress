@@ -1,0 +1,50 @@
+<ion-menu [content]="content">
+  <ion-header no-border-bottom>
+    <ion-toolbar color="primary" >
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <!--<img src="/assets/images/logo.png" width="150" height="150">-->
+  <button block menuClose ion-button icon-left class="button_format_default"  *ngFor="let p of pages" (click)="openPage(p)">
+    <ion-icon [name]="p.icon" item-left></ion-icon>
+    {{p.title}}
+  </button>
+
+   <button (click)="openSectionPage(1)" ion-button color="white" menuClose block icon-left  class="button_format_default">  <span class="item1 button-inner">            
+      <ion-icon name="planet" item-left></ion-icon>
+      My Plan 
+    </span> 
+  </button>
+
+<ion-list class="mylist">
+   <button (click)="openSectionPage(1)" ion-button color="white" menuClose block icon-left  class="list_button_top">  <span class="item1 button-inner">            
+        <ion-icon name="bookmarks" item-left></ion-icon>
+        Section - 01 
+    </span> 
+  </button>
+    <button (click)="openSectionPage(2)" ion-button color="white" menuClose block icon-left  >  <span class="list_item button-inner">            
+        <ion-icon name="brush" item-left></ion-icon>
+        Section - 02 
+    </span> 
+  </button>
+    <button (click)="openSectionPage(3)" ion-button color="white" menuClose block icon-left >  <span class="list_item button-inner">            
+        <ion-icon name="bulb" item-left></ion-icon>
+        Section - 03
+    </span> 
+  </button>
+    <button (click)="openSectionPage(4)" ion-button color="white" menuClose block icon-left class="list_button_bottom">  <span class="item1 button-inner">            
+        <ion-icon name="cafe" item-left></ion-icon>
+        Section - 04
+    </span> 
+  </button>
+</ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
